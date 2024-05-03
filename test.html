@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!----Custom css link---->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        list-style: none;
+        scroll-behavior: smooth;
+      }
+
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #121212;
+        --main-font: 2.2rem;
+        --p-font: 1.1rem;
+      }
+      body {
+        background: var(--bg-color);
+        color: var(--text-color);
+      }
+      header {
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        position: fixed;
+        background: var(--bg-color);
+        box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 8%;
+        transition: 0.3s;
+      }
+      .logo {
+        color: var(--text-color);
+        font-size: var(--main-font);
+        font-weight: 600;
+        line-height: 0.8;
+      }
+      #menu-icon {
+        font-size: 38px;
+        color: var(--text-color);
+        z-index: 10001;
+        display: none;
+      }
+      .navbar {
+        display: flex;
+      }
+      .navbar a {
+        font-size: var(--p-font);
+        color: var(--text-color);
+        font-weight: 600;
+        padding: 10px 15px;
+        margin: 0 10px;
+        transition: all 0.4s ease;
+      }
+      .navbar a:hover {
+        background: var(--text-color);
+        color: #fff;
+      }
+      .icons {
+        display: inline-block;
+      }
+      .icons i {
+        color: var(--text-color);
+        font-size: 24px;
+        margin-left: 15px;
+      }
+      .icons i:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!----header start--->
+    <header>
+      <a href="#" class="logo">Bags</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="icons">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <a href="#"><i class="bx bxs-user-circle"></i></a>
+        <a href="#"><i class="bx bxs-shopping-bag"></i></a>
+      </div>
+    </header>
+  </body>
+</html>
